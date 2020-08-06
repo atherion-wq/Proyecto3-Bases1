@@ -1,0 +1,1 @@
+*Se trabaja en la base de datos creando los 2 triggers,el procedure que contiene el cursos y la tabla temporal.
