@@ -1,4 +1,4 @@
 *Se trabaja en la base de datos creando los 2 triggers,el procedure que contiene el cursos y la tabla temporal.
 
-*Se termino la creación de las consultas dinámicas y funciones(escalar y tabla) además se comenzo con la creación de las consultas para los módulos en la aplicación web. 
-*Se identificaron los datos a retornar en el modulo de productos y se crearon los procedures para obtenerlos. 
+*Se terminó la creación de las consultas dinámicas y funciones(escalar y tabla) además se comenzó con la creación de las consultas para los módulos en la aplicación web. 
+*Se identificaron los datos a retornar en el módulo de productos y se crearon los procedures para obtenerlos. 
