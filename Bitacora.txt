@@ -1,4 +1,9 @@
 *Se trabaja en la base de datos creando los 2 triggers,el procedure que contiene el cursos y la tabla temporal.
 
 *Se terminó la creación de las consultas dinámicas y funciones(escalar y tabla) además se comenzó con la creación de las consultas para los módulos en la aplicación web. 
+
 *Se identificaron los datos a retornar en el módulo de productos y se crearon los procedures para obtenerlos. 
+
+Se ha realizado los módulos principales en la aplicación web además de terminar los procedimientos almacenados para obtener la información de cada uno.
+La aplicación ha llegado a un punto donde es aceptable y por cuestiones de tiempo relaciones con otros proyectos, se decide dejarla en este estado.
+También se comenzó la investigación sobre node js y grapql, se logró conectar la base de datos y solicitar los procedimientos almacenados creados para la funcionalidad de la aplicación web utilizando node js pero grapql no se ha trabajado.
