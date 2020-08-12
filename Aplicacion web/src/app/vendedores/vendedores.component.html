@@ -1,0 +1,99 @@
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+    <div class="w3-container" id="services" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Vendedores</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <p>Módulo de vendedores.</p>
+        <div class="containerSearch">
+          <div class="input-group">
+            <input [(ngModel)]="dataWrite" type="text" class="form-control" placeholder="Ingrese el dato" (ngModelChange)="modelChange($event)">
+            <div class="input-group-append">
+              <button class="btn btn-secondary" type="button">
+              <i>Buscar</i>
+            </button>
+          </div>
+        </div>
+        <br>
+        <div style="margin: 0 auto; display: block;">
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Vendedor</th>
+                  </tr>
+                </thead>
+                <tbody *ngFor="let data of listData">
+                  <tr (click)="openPopup(data.BusinessEntityID,content)" style="cursor: pointer;">
+                    <th scope="row">{{data.BusinessEntityID}}</th>
+                    <td>{{data.Vendedor}}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+      </div>
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Lista de ventas</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <strong>Id: </strong> {{espeficData.BusinessEntityID}}
+        </div>
+        <div class="col">
+          <strong>Vendedor: </strong> {{espeficData.Vendedor}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <strong>CommissionPct: </strong> {{espeficData.CommissionPct}}
+        </div>
+        <div class="col">
+          <strong>HireDate: </strong> {{espeficData.HireDate}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <strong>Título de trabajo: </strong> {{espeficData.JobTitle}}
+        </div>
+        <div class="col">
+          <strong>Puesto: </strong> {{espeficData.Name}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <strong>Nombre de grupo: </strong> {{espeficData.GroupName}}
+        </div>
+      </div>
+    </div>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Fecha de orden</th>
+          <th scope="col">Fecha de compra</th>
+          <th scope="col">Total</th>
+          <th scope="col">Cliente</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let data of listTransact">
+        <tr>
+          <th scope="row">{{data.SalesOrderID}}</th>
+          <td>{{data.OrderDate}}</td>
+          <td>{{data.ShipDate}}</td>
+          <td>{{data.total}}</td>
+          <td>{{data.Cliente}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Cerrar</button>
+  </div>
+</ng-template>
+
