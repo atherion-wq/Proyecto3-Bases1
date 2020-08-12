@@ -7,3 +7,7 @@
 Se ha realizado los módulos principales en la aplicación web además de terminar los procedimientos almacenados para obtener la información de cada uno.
 La aplicación ha llegado a un punto donde es aceptable y por cuestiones de tiempo relaciones con otros proyectos, se decide dejarla en este estado.
 También se comenzó la investigación sobre node js y grapql, se logró conectar la base de datos y solicitar los procedimientos almacenados creados para la funcionalidad de la aplicación web utilizando node js pero grapql no se ha trabajado.
+
+*Finalmente, se incio con el "binding" de datos. Se implementó la librería express del node js en la API, para poder iniciar con el intercambio de datos. Una vez que se pudo obtener y enviar los datos de la base de datos, se procedió a capturarlos y representarlos en la interfaz gráfica completando así, finalmente un proyecto funcional.
+
+*Este fue el último cambio realizado para poder llegar a la versión final del proyecto, la cual es la que será entregada posteriormente.
